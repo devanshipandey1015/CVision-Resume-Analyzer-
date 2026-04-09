@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Badge } from "../components/common/Badge";
 import { ProgressBar } from "../components/common/ProgressBar";
-import { ROLE_CONFIGS, ROLE_OPTIONS } from "../data/roles";
-import { SAMPLE_RESUME } from "../data/sampleData";
+import { ROLE_OPTIONS } from "../data/roles";
 import { analyzeResume } from "../utils/analysis";
 import { extractTextFromPdf } from "../utils/pdf";
 import type { AnalysisResult } from "../types";
@@ -15,8 +14,8 @@ interface AnalyzePageProps {
 export function AnalyzePage({ onSave, latest }: AnalyzePageProps) {
   const [role, setRole] = useState("Frontend Developer");
   const [customRole, setCustomRole] = useState("");
-  const [resumeText, setResumeText] = useState(SAMPLE_RESUME);
-  const [jobDescription, setJobDescription] = useState(ROLE_CONFIGS["Frontend Developer"].sampleJD);
+  const [resumeText, setResumeText] = useState("");
+  const [jobDescription, setJobDescription] = useState("");
   const [error, setError] = useState("");
   const [result, setResult] = useState<AnalysisResult | undefined>(latest);
 
