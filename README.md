@@ -1,4 +1,5 @@
 # CVision - Resume Analyzer Dashboard
+<img width="1697" height="848" alt="image" src="https://github.com/user-attachments/assets/42930a5b-44f2-4448-bd39-f19a45dfddca" />
 
 Modern, frontend-only resume analysis dashboard built with React, Vite, and TypeScript.  
 It helps users evaluate resumes against target roles and job descriptions using realistic rule-based ATS heuristics.
@@ -52,52 +53,3 @@ No backend or APIs are required. All data is stored in `localStorage`.
 - Recharts
 - LocalStorage persistence
 
-## Setup
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run development server:
-   ```bash
-   npm run dev
-   ```
-3. Build for production:
-   ```bash
-   npm run build
-   ```
-4. Preview production build:
-   ```bash
-   npm run preview
-   ```
-
-## Folder Structure
-
-```text
-src/
-  components/
-    common/
-    layout/
-  data/
-  hooks/
-  pages/
-  types/
-  utils/
-```
-
-## Screenshots (Placeholders)
-
-- `docs/screenshots/auth.png`
-- `docs/screenshots/dashboard.png`
-- `docs/screenshots/analyze.png`
-- `docs/screenshots/history.png`
-- `docs/screenshots/insights.png`
-- `docs/screenshots/profile.png`
-
-## Future Improvements
-
-- PDF and DOCX parsing support
-- export analysis reports as PDF
-- multi-resume comparison mode
-- richer NLP-based rewriting assistant
-- interview prep suggestions based on detected skill gaps
